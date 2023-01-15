@@ -34,6 +34,12 @@ body {
 
 }
 
+.logo span {
+    color: #FF900E;
+
+
+}
+
 .nav-btn button {
     background-color: antiquewhite;
     border: none;
@@ -129,10 +135,6 @@ body {
     color: #FF900E;
 }
 
-
-
-.team-info {}
-
 /*------------------------
       Enjoy section
 ------------------------*/
@@ -149,8 +151,6 @@ body {
 .enjoy-container img {
     width: 100%;
 }
-
-
 
 .enjoy-info {
     width: 100%;
@@ -170,7 +170,6 @@ body {
     padding-left: 21px;
     margin-top: 0;
 }
-
 
 /*-----------------
 enjoy category  
@@ -211,8 +210,6 @@ enjoy category
 .btn-experience button>span {
     font-size: 50px;
     font-weight: 700;
-
-
 }
 
 /*-----------------
@@ -233,7 +230,7 @@ enjoy category
     margin-bottom: 6px;
 }
 
-.companys-info {
+.companies-info {
     display: flex;
     justify-content: space-around;
 
@@ -249,6 +246,10 @@ enjoy category
 
 }
 
+.company-info:hover {
+    background-color: whitesmoke;
+}
+
 .company-info strong {
     font-size: 45px;
     font-weight: 600;
@@ -257,10 +258,48 @@ enjoy category
 }
 
 .company-info p {
-
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
 }
+
+
+
+/* ------------------
+Our Sponsors Section 
+ --------------------*/
+.sponsors-container {
+    margin: 0 10%;
+    margin-bottom: 100px;
+}
+
+.sponsors-info {
+    text-align: center;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-around;
+    filter: grayscale();
+    margin-top: 100px;
+
+}
+
+/* ------------------
+        footer
+ --------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 100px;
+    text-align: center;
+}
+
+
 
 /*******************
     Mobile device 
@@ -300,11 +339,15 @@ enjoy category
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .companys-info {
+    .companies-info {
         display: grid;
         gap: 50px;
 
 
+    }
+
+    .sponsors-logo {
+        display: none;
     }
 
 
@@ -349,11 +392,16 @@ enjoy category
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .companys-info {
+    .companies-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
 
     }
+
+    .sponsors-logo {
+        display: none;
+    }
+
 }
