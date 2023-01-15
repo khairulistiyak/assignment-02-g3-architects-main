@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+/* nav section  */
+
+.header-container {
+    width: 100%;
+    background-color: antiquewhite;
+
+}
+
+.nav-container {
+    margin: 0 10%;
+}
+
+.nav-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.logo {
+    color: #131313;
+    margin: 0;
+    font-size: 45px;
+
+}
+
+.nav-btn button {
+    background-color: antiquewhite;
+    border: none;
+    margin-left: 15px;
+    margin-right: 0px;
+    text-decoration: none;
+    color: #131313;
+    font-size: 18px;
+}
+
+/* ---------------------*
+   Main header section  
+------------------------*/
+.main-header-container {
+    text-align: center;
+    margin: 0 10%;
+}
+
+.header-title {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #131313;
+}
+
+.header-description {
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    width: 180px;
+    height: 64px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.header-img {
+    width: 100%;
+    margin-bottom: 45px;
+
+}
+
+/*******************
+    Mobile device 
+ *******************/
+@media screen and (max-width: 688px) {
+    .nav-container {
+        margin: 0;
+    }
+
+    .nav-info {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .nav-btn button {
+        background-color: rgb(158, 158, 158);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        color: white;
+
+    }
+
+
+}
+
+/*******************
+      Tab Device
+ *******************/
+
+@media screen and (min-width: 689px) and (max-width:992px) {
+    .nav-container {
+        margin: 0;
+    }
+
+    .nav-info {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        margin-top: 30px;
+    }
+
+    .nav-btn button {
+        background-color: rgb(158, 158, 158);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+}
